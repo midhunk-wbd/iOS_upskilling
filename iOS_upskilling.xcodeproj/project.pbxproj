@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		000000000000000000000120 /* iOS_upskilling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = iOS_upskilling.app; path = /Users/midhun.k/iOS_upskilling/build/Debug/iOS_upskilling.app; sourceTree = "<absolute>"; };
+		000000000000000000000120 /* iOS_upskilling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_upskilling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -31,6 +31,7 @@
 			isa = PBXGroup;
 			children = (
 				4EB95B70308FC6010084FCD1 /* MyApp */,
+				000000000000000000000120 /* iOS_upskilling.app */,
 			);
 			sourceTree = "<group>";
 		};
