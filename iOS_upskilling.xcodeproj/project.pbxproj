@@ -7,28 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		000000000000000000000120 /* iOS_upskilling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_upskilling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000120 /* iOS_upskilling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = iOS_upskilling.app; path = /Users/midhun.k/iOS_upskilling/build/Debug/iOS_upskilling.app; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4EB95B5C308FC4680084FCD1 /* App */ = {
+		4EB95B70308FC6010084FCD1 /* MyApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = App;
-			sourceTree = "<group>";
-		};
-		4EB95B5F308FC46B0084FCD1 /* Phases */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Phases;
-			sourceTree = "<group>";
-		};
-		4EB95B61308FC46D0084FCD1 /* Resources */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		4EB95B63308FC46F0084FCD1 /* Shared */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Shared;
+			path = MyApp;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,20 +30,8 @@
 		000000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
-				4EB95B63308FC46F0084FCD1 /* Shared */,
-				000000000000000000000020 /* Products */,
-				4EB95B5C308FC4680084FCD1 /* App */,
-				4EB95B5F308FC46B0084FCD1 /* Phases */,
-				4EB95B61308FC46D0084FCD1 /* Resources */,
+				4EB95B70308FC6010084FCD1 /* MyApp */,
 			);
-			sourceTree = "<group>";
-		};
-		000000000000000000000020 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				000000000000000000000120 /* iOS_upskilling.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,10 +48,7 @@
 			buildRules = (
 			);
 			fileSystemSynchronizedGroups = (
-				4EB95B5C308FC4680084FCD1 /* App */,
-				4EB95B5F308FC46B0084FCD1 /* Phases */,
-				4EB95B61308FC46D0084FCD1 /* Resources */,
-				4EB95B63308FC46F0084FCD1 /* Shared */,
+				4EB95B70308FC6010084FCD1 /* MyApp */,
 			);
 			name = iOS_upskilling;
 			productName = MyApp;
@@ -110,7 +80,7 @@
 			mainGroup = 000000000000000000000001;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 90;
-			productRefGroup = 000000000000000000000020 /* Products */;
+			productRefGroup = 000000000000000000000001;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
