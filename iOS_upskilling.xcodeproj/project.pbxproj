@@ -6,11 +6,27 @@
 	objectVersion = 90;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		4E34895930AE26560087ED37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000100000000;
+			remoteInfo = iOS_upskilling;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* iOS_upskilling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_upskilling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E34895530AE26560087ED37 /* iOS_upskillingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_upskillingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		4E34895630AE26560087ED37 /* iOS_upskillingTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = iOS_upskillingTests;
+			sourceTree = "<group>";
+		};
 		4EB95B70308FC6010084FCD1 /* MyApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MyApp;
@@ -24,6 +40,11 @@
 			files = (
 			);
 		};
+		4E34895230AE26560087ED37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -32,6 +53,8 @@
 			children = (
 				4EB95B70308FC6010084FCD1 /* MyApp */,
 				000000000000000000000120 /* iOS_upskilling.app */,
+				4E34895530AE26560087ED37 /* iOS_upskillingTests.xctest */,
+				4E34895630AE26560087ED37 /* iOS_upskillingTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +79,27 @@
 			productReference = 000000000000000000000120 /* iOS_upskilling.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4E34895430AE26560087ED37 /* iOS_upskillingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E34895D30AE26560087ED37 /* Build configuration list for PBXNativeTarget "iOS_upskillingTests" */;
+			buildPhases = (
+				4E34895130AE26560087ED37 /* Sources */,
+				4E34895230AE26560087ED37 /* Frameworks */,
+				4E34895330AE26560087ED37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E34895A30AE26560087ED37 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4E34895630AE26560087ED37 /* iOS_upskillingTests */,
+			);
+			name = iOS_upskillingTests;
+			productName = iOS_upskillingTests;
+			productReference = 4E34895530AE26560087ED37 /* iOS_upskillingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -63,11 +107,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2630;
+				LastSwiftUpdateCheck = 2720;
 				LastUpgradeCheck = 2700;
 				TargetAttributes = {
 					000000000000000100000000 = {
 						CreatedOnToolsVersion = 26.3;
+					};
+					4E34895430AE26560087ED37 = {
+						CreatedOnToolsVersion = 27.2;
+						TestTargetID = 000000000000000100000000;
 					};
 				};
 			};
@@ -86,12 +134,18 @@
 			projectRoot = "";
 			targets = (
 				000000000000000100000000 /* iOS_upskilling */,
+				4E34895430AE26560087ED37 /* iOS_upskillingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		000000000000000140000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		4E34895330AE26560087ED37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 			);
@@ -104,7 +158,24 @@
 			files = (
 			);
 		};
+		4E34895130AE26560087ED37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E34895A30AE26560087ED37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilters = (
+				ios,
+				macos,
+			);
+			target = 000000000000000100000000 /* iOS_upskilling */;
+			targetProxy = 4E34895930AE26560087ED37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		000000000000000011000000 /* Debug configuration for PBXProject "iOS_upskilling" */ = {
@@ -313,6 +384,61 @@
 			};
 			name = Release;
 		};
+		4E34895B30AE26560087ED37 /* Debug configuration for PBXNativeTarget "iOS_upskillingTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midhun.iOS-upskillingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS_upskilling.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS_upskilling";
+			};
+			name = Debug;
+		};
+		4E34895C30AE26560087ED37 /* Release configuration for PBXNativeTarget "iOS_upskillingTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midhun.iOS-upskillingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS_upskilling.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS_upskilling";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +455,14 @@
 			buildConfigurations = (
 				000000000000000111000000 /* Debug configuration for PBXNativeTarget "iOS_upskilling" */,
 				000000000000000112000000 /* Release configuration for PBXNativeTarget "iOS_upskilling" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		4E34895D30AE26560087ED37 /* Build configuration list for PBXNativeTarget "iOS_upskillingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E34895B30AE26560087ED37 /* Debug configuration for PBXNativeTarget "iOS_upskillingTests" */,
+				4E34895C30AE26560087ED37 /* Release configuration for PBXNativeTarget "iOS_upskillingTests" */,
 			);
 			defaultConfigurationName = Release;
 		};
